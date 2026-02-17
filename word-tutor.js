@@ -662,7 +662,7 @@
 
         // If already recording, stop
         if (recognition) {
-            recognition.abort();
+            recognition.stop();
             recognition = null;
             recordBtn.classList.remove('recording');
             recordBtn.innerHTML = '🎤 따라 읽기 (Speak)';
@@ -1228,3 +1228,4 @@
         init();
     }
 })();
+
